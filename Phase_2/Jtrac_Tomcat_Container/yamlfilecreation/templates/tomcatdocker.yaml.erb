@@ -1,0 +1,13 @@
+service:
+  container_name: "<%= @tomcat_container_name %>"
+  osname: "Debian"
+  osversion: "8 (jessie)"
+  ports: ["8080"]
+  diskattachmentpath:
+    [
+      { path: "/usr/local/tomcat/webapps", size: "20" },    
+    ]
+  workloadstartexecutioncommand: []
+  workloadstopexecutioncommand: ["sh /usr/local/tomcat/bin/catalina.sh run"]
+  environment: []
+  pathvariables: ["/usr/local/tomcat/webapps"]

@@ -1,0 +1,6 @@
+Release Date:
+Purpose: Automatic installation of Tomcat Container
+Workload Version : 8.0.53
+
+Notes:
+    1. Provide the values in input.properties file
